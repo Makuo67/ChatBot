@@ -1,0 +1,28 @@
+/* Message.css */
+.message {
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin: 10px auto; 
+    padding: 10px;
+}
+
+.user-message {
+    background-color: #d1e7dd;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #d3cccd;
+    text-align: left;
+    align-self: flex-start;
+    font-weight: lighter;
+}
+
+.message-username {
+    font-weight: bold;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 3px;
+}

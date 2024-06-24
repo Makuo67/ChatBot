@@ -33,9 +33,12 @@ const Chatbot = () => {
           { sender: "user", text: `${userName}: ${input}` },
         ];
         setMessages(newMessages);
-        const response = await axios.post("http://localhost:5000/predict", {
-          message: input,
-        });
+        const response = await axios.post(
+          "https://chatbot-8ltn.onrender.com/predict",
+          {
+            message: input,
+          }
+        );
         setMessages([
           ...newMessages,
           { sender: "bot", text: response.data.response },
